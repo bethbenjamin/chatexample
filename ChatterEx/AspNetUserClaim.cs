@@ -12,12 +12,12 @@ namespace ChatterEx
     using System;
     using System.Collections.Generic;
     
-    public partial class Chat
+    public partial class AspNetUserClaim
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string UserId { get; set; }
-        public System.DateTime TimeStamp { get; set; }
-        public string Message { get; set; }
+        public string ClaimType { get; set; }
+        public string ClaimValue { get; set; }
     
         public virtual AspNetUser AspNetUser { get; set; }
     }
